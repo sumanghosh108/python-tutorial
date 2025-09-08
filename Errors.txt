@@ -1,8 +1,7 @@
-1. ValueError
-2. 
-3. 
-4. 
-5. 
+# -----------------------> Errors in python <-------------------
+1. ValueError --> Right type, wrong value
+2. SyntexError --> 
+3. NameError --> using a name or function not define
+4. IndexError --> Index out of range in a list or string
+5. TypeError --> Operation on wrong data type
 6. 
-7. IndexError
-8. TypeError
