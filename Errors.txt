@@ -4,4 +4,6 @@
 3. NameError --> using a name or function not define
 4. IndexError --> Index out of range in a list or string
 5. TypeError --> Operation on wrong data type
-6. 
+6. IndentationError --> wrong indentation level
+7. AttributeError --> Object doesn't have that attribute/method
+8. KeyError --> 
