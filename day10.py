@@ -118,6 +118,26 @@ print(res,d)'''
 
 # ---------> assignment <---------------
 # without using build-in method, pop in dictionary | use del
-# without using build-in method, popitem() in dictionary | use del
+'''d={'s_name':['sandya','heer','batman','suman','dhanujaya'],
+   's_marks':[95,94,100,95,95],
+   'regd_no':[2101201010,2101201021,2101201051,2101201098,2101202145]
+   }
+pop_item=input('Enter the key want to pop: ')
+if pop_item in d:
+    del d[pop_item]
+    print(f'After deleting {pop_item}, the remaining dictionary {d}')
+else:
+    print(f'Entered item {pop_item} not present in dictionary')'''
 
+# without using build-in method, popitem() in dictionary | use del
+d={'s_name':['sandya','heer','batman','suman','dhanujaya'],
+   's_marks':[95,94,100,95,95],
+   'regd_no':[2101201010,2101201021,2101201051,2101201098,2101202145]
+   }
+if d:
+    for key in d:
+        last_key=key
+    del d[last_key]
+    print(f'popitem : {last_key}')
+    print(f'Remaining items: {d}')
 
