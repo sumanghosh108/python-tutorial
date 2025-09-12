@@ -80,7 +80,7 @@ if type(s)==int:
 # print(d) # output: {'s_name': ['sandya', 'heer', 'batman', 'suman', 'dhanujaya'], 's_marks': [95, 94, 100, 95, 95]}
 
 # ------------> build-in methods ,-------------------
-    # - .items()
+    # 1- .items()
     #   dict_name.items() # returns list of tuple
         
         # for i in [('s_name', ['sandya', 'heer', 'batman', 'suman', 'dhanujaya']), ('s_marks', [95, 94, 100, 95, 95])]:
@@ -105,12 +105,12 @@ if type(s)==int:
         # for key,value,pair in d.items():
         #     print(key,value,pair)
     
-    # - dict_name.keys() # returns dict_keys
-    # - dict_name.values() # returns dict_values
-    # - result=dict_name.copy() # returns dictionary
-    # - dict_name.clear() # retrurn Nonn
-    # - result = dict_name.pop(key) # returns key values
-    # - result = dict_name.popitem() # returns tuples // removes the last key
+    # 2- dict_name.keys() # returns dict_keys
+    # 3- dict_name.values() # returns dict_values
+    # 4- result=dict_name.copy() # returns dictionary
+    # 5- dict_name.clear() # retrurn Nonn
+    # 6- result = dict_name.pop(key) # returns key values
+    # 7- result = dict_name.popitem() # returns tuples // removes the last key
 
 # res=d.pop('s_name1','key is not present')
 '''res=d.popitem()
@@ -129,8 +129,10 @@ if pop_item in d:
 else:
     print(f'Entered item {pop_item} not present in dictionary')'''
 
+
+
 # without using build-in method, popitem() in dictionary | use del
-d={'s_name':['sandya','heer','batman','suman','dhanujaya'],
+'''d={'s_name':['sandya','heer','batman','suman','dhanujaya'],
    's_marks':[95,94,100,95,95],
    'regd_no':[2101201010,2101201021,2101201051,2101201098,2101202145]
    }
@@ -139,5 +141,23 @@ if d:
         last_key=key
     del d[last_key]
     print(f'popitem : {last_key}')
-    print(f'Remaining items: {d}')
+    print(f'Remaining items: {d}')'''
+
+
+d={'s_name':['sandya','heer','batman','suman','dhanujaya'],
+   's_marks':[95,94,100,95,95],
+   }
+'''c,l,k=1,len(d),''
+for i in d:
+    if c==l:
+        k=i
+    c+=1
+print(k,d[k])
+del d[k]
+print(d)'''
+
+last_key=[i for i in d][-1]
+print(last_key,d[last_key])
+del d[last_key]
+print(d)
 
