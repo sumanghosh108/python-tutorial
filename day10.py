@@ -29,7 +29,6 @@ print(s)'''
 '''s={1,2,3,4}
 for i in range(len(s)):
     print(s[i])'''
-
 # -------------------> dictionary <---------------------------
 # group of key value pairs seperated by comma, enclosed with curly brackets
 # d={} # empty dictionary
