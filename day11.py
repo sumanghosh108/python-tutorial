@@ -70,7 +70,7 @@ for i in range(x):
 print(d)'''
 
 # without using build-in method, setdefault
-'''setdefault('key',value) # returns value
+'''setdefault('key',value) # returns value // if present return the value of that key otherwise add the key with value
         res=d.setdefault('s_name1',100)'''
 
 '''d={'s_name':['sandya','heer','batman','suman','dhanujaya'],
@@ -79,12 +79,12 @@ print(d)'''
    }
 if d:
     x=eval(input(f'Enter the Key :'))
-    if type(x) not in [list,set,dict]:
+    if type(x) not in [list,set,dict] and x not in d:
         y=eval(input(f'Enter the Value : '))
         d[x]=y
         print(y)
     else:
-        print('Invalid data types (this data type not supported for key) ❌❌❌ !!')
+        print(f'Key {x} is present in dictionary')
 print(d)'''
 
 
@@ -176,6 +176,7 @@ print(s4.isupper())'''
         str_name.upper()'''
         
 '''x=input('Enter string : ')
+newstr=''
 for i in x:
     if ord(i)>=97 and ord(i)<=122:
         i=chr(ord(i)-32)
@@ -196,4 +197,14 @@ else:
     print('False')'''
 
 
-
+'''x=input('Enter string : ')
+l=''
+for i in x:
+    if ord(i)>=65 and ord(i)<=90:
+        l+=i
+    elif ord(i)>=48 and ord(i)<=57:
+        l+=i
+if len(l)==len(x):
+    print('True')
+else:
+    print('False')'''
