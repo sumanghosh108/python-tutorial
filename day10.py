@@ -25,7 +25,7 @@ print(s)'''
 s={x for x in c if x in 'aeiouAEIOU'}
 print(s)'''
 
-# for loop range support in set # output: TypeError: 'set' object is not subscriptable
+# for loop range not support in set # output: TypeError: 'set' object is not subscriptable
 '''s={1,2,3,4}
 for i in range(len(s)):
     print(s[i])'''
@@ -143,9 +143,9 @@ if d:
     print(f'Remaining items: {d}')'''
 
 
-d={'s_name':['sandya','heer','batman','suman','dhanujaya'],
+'''d={'s_name':['sandya','heer','batman','suman','dhanujaya'],
    's_marks':[95,94,100,95,95],
-   }
+   }'''
 '''c,l,k=1,len(d),''
 for i in d:
     if c==l:
@@ -155,8 +155,8 @@ print(k,d[k])
 del d[k]
 print(d)'''
 
-last_key=[i for i in d][-1]
+'''last_key=[i for i in d][-1]
 print(last_key,d[last_key])
 del d[last_key]
-print(d)
+print(d)'''
 

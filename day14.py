@@ -81,8 +81,8 @@ print(l)'''
 '''
 Class: 
 '''
-class myself:
+'''class myself:
     print('k')
 # print(dir(myself))
-print(len(dir(myself))) # output: 27 // version 3.12.5
+print(len(dir(myself))) # output: 27 // version 3.12.5'''
 
