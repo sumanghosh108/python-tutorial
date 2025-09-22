@@ -95,15 +95,19 @@ class Flipkart:
         self.__m_no=9800202833
         self.u_name='suman'
         self._wishlist=25
-        self.__cart=4
+        self._cart=4
     def display(self):
         print(self.u_name)
         print(self.__m_no)
+        print(self._cart)
     def __disp(self):
-        self.__cart=5
+        self._cart=5
+        print(self._cart)
+        
     
 user1=Flipkart()
-# user1.display()
+user1.display()
+user1.__disp()
 # user1.+
 # __disp()  # AttributeError: 'Flipkart' object has no attribute '__disp'
 # print(user1._wishlist) # 25
