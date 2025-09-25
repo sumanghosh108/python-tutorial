@@ -138,3 +138,66 @@ create one method
     if user enters 1 - call perfectnumber()
     if user enters 2 - call reverse number() // display to user that number
 '''
+# class PerfectNumber:
+#     super().process_number()
+#     def perfect_number(self):
+#         total=0
+#         for x in range(1,num):
+#             if num%x==0:
+#                 total+=x
+#         if total==num:
+#             print(f"{num} is a perfect number.")
+#         else:
+#             print(f"{num} is not a perfect number.")
+
+# class ReverseNumber:
+#     super().process_number()
+#     def reverse_number(self):
+#         rev=0
+#         original_num = num
+#         while num > 0:
+#             digit = num % 10
+#             rev = rev * 10 + digit
+#             num = num // 10
+#         print(f"The reverse of {original_num} is {rev}.")
+
+# class NumberProcessor(PerfectNumber, ReverseNumber):
+#     def __init__(self):
+#         super().__init__()
+#         num = int(input("Enter a number: "))
+#     def process_number(self):
+#             option = int(input("Enter your choice: "))
+#             match option:
+#                 case 1:
+#                     self.perfect_number()
+#                 case 2:
+#                     self.reverse_number()
+#                 case _:
+#                     print("Invalid option. Please try again.")
+
+# done = NumberProcessor()
+# done.process_number()
+
+
+class perfectNum:
+    def perfect_number(self):
+        total=0
+        for x in range(1,num):
+            if num%x==0:
+                total+=x
+        if total==num:
+            print(f"{num} is a perfect number.")
+        else:
+            print(f"{num} is not a perfect number.")
+class ReverseNumber:
+    def Rev_number(self):
+        rev=0
+        original_num = num
+        while num > 0:
+            digit = num % 10
+            rev = rev * 10 + digit
+            num = num // 10
+        print(f"The reverse of {original_num} is {rev}.")
+class Number(perfectNum,ReverseNumber):
+    def process(self,num):
+        
