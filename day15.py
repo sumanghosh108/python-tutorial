@@ -41,7 +41,7 @@ print(obj.name)
 # object creation
 '''
     1. __new__()  // method execute // creating the address of object
-    2. __init__() // constructor --> without call it's execute --> initi. the instance variable
+    2. __init__() // constructor --> without call it's execute --> init. the instance variable
     3. 
 '''
 

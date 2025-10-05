@@ -75,7 +75,7 @@ user1.disp()'''
     how to access private method and variable outside the class ?
     --> by using getter() and setter() method
 '''
-'''class LinkedIn:
+class LinkedIn:
     def __init__(self):
         self.__connections =2000
     def getter(self):
@@ -85,11 +85,11 @@ user1.disp()'''
 user1=LinkedIn()
 user1.getter()
 user1.setter(2500)
-user1.getter()'''
+user1.getter()
 
 # ------------------
 
-class Flipkart:
+'''class Flipkart:
     name='Flipkart'
     def __init__(self):
         self.__m_no=9800202833
@@ -107,7 +107,7 @@ class Flipkart:
     
 user1=Flipkart()
 user1.display()
-user1.__disp()
+user1.__disp()'''
 # user1.+
 # __disp()  # AttributeError: 'Flipkart' object has no attribute '__disp'
 # print(user1._wishlist) # 25
